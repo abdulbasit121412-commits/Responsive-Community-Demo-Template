@@ -1,0 +1,273 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NOIR Fashion | Tailwind</title>
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+</head>
+<body class="bg-black text-white">
+
+<!-- NAVBAR -->
+<nav id="navbar" class="sticky top-0 z-50 bg-black/95 backdrop-blur-sm border-b border-gray-900">
+  <div class="flex justify-between items-center px-4 md:px-10 py-4">
+    <a href="#" class="flex items-center gap-2 hover:-translate-y-1 duration-500">
+      <svg xmlns="http://www.w3.org/2000/svg" class="w-10 h-10 md:w-14 md:h-14 text-pink-600" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+        <polygon points="12 2 20.5 7 20.5 17 12 22 3.5 17 3.5 7" />
+      </svg>  
+      <span class="text-purple-500 font-bold text-3xl md:text-4xl tracking-wider">NOIR</span>
+    </a>  
+    
+    <!-- DESKTOP LINKS (Hidden on mobile) -->
+    <ul class="hidden md:flex items-center gap-10">
+      <li><a href="#" class="text-white text-lg hover:text-pink-400 transition-transform duration-300 hover:-translate-y-1">Home</a></li>
+      <li><a href="#" class="text-white text-lg hover:text-pink-400 transition-transform duration-300 hover:-translate-y-1">Featured</a></li>  
+      <li><a href="#" class="text-white text-lg hover:text-pink-400 transition-transform duration-300 hover:-translate-y-1">Collection</a></li>
+      <li><a href="#" class="text-white bg-pink-600 rounded-full text-lg font-semibold px-8 py-2 hover:bg-pink-800 transition-transform duration-300 hover:-translate-y-1">Get in touch</a></li>
+    </ul>
+  </div>  
+</nav>
+
+<!-- HERO SECTION -->
+<div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center p-6 md:p-10 mt-5 md:mt-10">
+  <div class="hero-title flex flex-col justify-center">
+    <h1 class="text-6xl md:text-[90px] text-white leading-none font-semibold mb-6">
+      Redefine<br>Your <span class="text-pink-600">style</span><br>Revolution
+    </h1>  
+    
+    <p class="text-lg md:text-xl text-gray-400 font-semibold mb-2">Discover our avant-garde collection where high fashion meets street culture.</p>
+    <p class="text-lg md:text-xl text-gray-400 font-semibold mb-10">Each piece tells a story of rebellion, elegance, and innovation.</p>
+
+    <!-- STATS -->
+    <div class="flex flex-wrap md:flex-nowrap gap-10">
+      <div>
+        <span class="text-4xl font-bold text-pink-700 block">500+</span>
+        <p class="text-lg text-gray-400 font-semibold">Exclusive Pieces</p>
+      </div>
+      <div>
+        <span class="text-4xl font-bold text-pink-700 block">48H</span>
+        <p class="text-lg text-gray-400 font-semibold">Fast Delivery</p>
+      </div>
+      <div>
+        <span class="text-4xl font-bold text-pink-700 block">100%</span>
+        <p class="text-lg text-gray-400 font-semibold">Sustainable</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- HERO IMAGES -->
+  <div class="relative w-full max-w-lg mx-auto h-[500px] md:h-[700px] mt-10 lg:mt-0">
+    <div class="slide opacity-100 transition-opacity duration-1000 absolute inset-0">
+      <img src="image/portrait-young-handsome-bearded-man.jpg" alt="fashion" class="w-full h-full object-cover rounded-xl shadow-2xl shadow-pink-900/20">
+    </div>
+    <div class="slide opacity-0 transition-opacity duration-1000 absolute inset-0">
+      <img src="image/fashion-portrait-two-elegant-women-best-friends-posing-indoor-grey-wall-wearing-winter-fluffy-coat-black-casual-hat-fashionable-clothes-sisters-walking.jpg" alt="fashion" class="w-full h-full object-cover rounded-xl">
+    </div>
+    <div class="slide opacity-0 transition-opacity duration-1000 absolute inset-0">
+      <img src="image/photo-1617137968427-85924c800a22.jpg" alt="fashion" class="w-full h-full object-cover rounded-xl">
+    </div>
+  </div>
+</div>
+
+<!-- LATEST COLLECTIONS HEADER -->
+<section class="mt-20 mb-10 px-4">
+  <div class="text-center max-w-3xl mx-auto">
+    <h2 class="text-white text-4xl md:text-5xl font-bold mb-4">Latest Collections</h2> 
+    <p class="text-sm md:text-lg text-gray-400 font-semibold tracking-widest uppercase">Discover our curated selection</p> 
+  </div>
+
+  <!-- CATEGORY BUTTONS (Mobile Horizontal Scroll) -->
+  <div class="flex justify-start md:justify-center gap-4 mt-10 overflow-x-auto pb-4 px-4 whitespace-nowrap scrollbar-hide">
+    <a href="#" class="text-white bg-pink-600 px-8 py-2 rounded border border-pink-600 transition-all duration-300">ALL</a>
+    <a href="#" class="text-gray-400 border border-gray-600 px-6 py-2 rounded hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all duration-300">WOMEN</a>
+    <a href="#" class="text-gray-400 border border-gray-600 px-6 py-2 rounded hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all duration-300">MEN</a>
+    <a href="#" class="text-gray-400 border border-gray-600 px-6 py-2 rounded hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all duration-300">ACCESSORIES</a>
+    <a href="#" class="text-gray-400 border border-gray-600 px-6 py-2 rounded hover:bg-pink-600 hover:text-white hover:border-pink-600 transition-all duration-300">LIMITED EDITION</a>
+  </div>
+</section>
+
+<!-- PRODUCT GRID 1 -->
+<section class="px-6 md:px-10 pb-10">
+  <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+    
+    <div class="group cursor-pointer">
+      <div class="overflow-hidden rounded-xl shadow-lg border border-gray-900 group-hover:border-pink-500/50 transition-all duration-300">
+        <img src="image/portrait-handsome-fashion-stylish-hipster-businessman-model-dressed-elegant-brown-suit-sitting-near-dark.jpg" alt="fashion" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="flex flex-col mt-4">
+        <span class="text-xs text-pink-600 font-bold uppercase tracking-wider mb-1">New Arrival</span>
+        <h2 class="text-xl text-white font-bold">Urban Edge</h2>
+        <h4 class="text-sm text-gray-400">Men's Collection</h4>
+        <span class="text-pink-500 text-lg font-bold mt-2">From $299</span>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="overflow-hidden rounded-xl shadow-lg border border-gray-900 group-hover:border-pink-500/50 transition-all duration-300">
+        <img src="image/pexels-ferarcosn-19081N3.jpg" alt="fashion" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="flex flex-col mt-4">
+        <span class="text-xs text-pink-600 font-bold uppercase tracking-wider mb-1">Trending</span>
+        <h2 class="text-xl text-white font-bold">Street Elegance</h2>
+        <h4 class="text-sm text-gray-400">Accessories</h4>
+        <span class="text-pink-500 text-lg font-bold mt-2">From $149</span>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="overflow-hidden rounded-xl shadow-lg border border-gray-900 group-hover:border-pink-500/50 transition-all duration-300">
+        <img src="image/two-girls-red-coats-models.jpg" alt="fashion" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="flex flex-col mt-4">
+        <span class="text-xs text-pink-600 font-bold uppercase tracking-wider mb-1">Exclusive</span>
+        <h2 class="text-xl text-white font-bold">Crimson Winter</h2>
+        <h4 class="text-sm text-gray-400">Women's Collection</h4>
+        <span class="text-pink-500 text-lg font-bold mt-2">From $499</span>
+      </div>
+    </div>
+
+    <div class="group cursor-pointer">
+      <div class="overflow-hidden rounded-xl shadow-lg border border-gray-900 group-hover:border-pink-500/50 transition-all duration-300">
+        <img src="image/stylish-young-handsome-man-out-town.jpg" alt="fashion" class="w-full h-[400px] object-cover group-hover:scale-105 transition-transform duration-500">
+      </div>
+      <div class="flex flex-col mt-4">
+        <span class="text-xs text-pink-600 font-bold uppercase tracking-wider mb-1">New Arrival</span>
+        <h2 class="text-xl text-white font-bold">City Nomad</h2>
+        <h4 class="text-sm text-gray-400">Men's Collection</h4>
+        <span class="text-pink-500 text-lg font-bold mt-2">From $350</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ART OF FASHION SECTION -->
+<section class="border-t border-gray-900 mt-10">
+  <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center p-6 md:p-10 my-10">
+    
+    <!-- Left Side: Text & Features -->
+    <div class="flex flex-col">
+      <span class="text-sm text-pink-600 font-bold tracking-widest uppercase mb-4">Crafted With Passion</span>
+      <h2 class="text-4xl md:text-5xl text-white font-bold mb-6">The Art of Fashion</h2>
+      <p class="text-base md:text-lg text-gray-400 leading-relaxed mb-10">
+        Where tradition meets innovation. Our master craftsmen blend centuries-old techniques with cutting-edge design to create pieces that transcend time and trends.
+      </p>
+
+      <!-- Feature Cards -->
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 mb-10">
+        <div class="border border-gray-800 bg-gray-900/30 p-6 rounded-xl hover:border-pink-500 transition-colors duration-300">
+          <span class="text-2xl bg-pink-600 text-white rounded p-2 inline-block mb-4">👑</span>
+          <h2 class="text-white text-xl font-bold mb-2">Premium Quality</h2>
+          <p class="text-gray-400 text-sm">Only the finest materials and fabrics make it into our collections.</p>
+        </div>
+        <div class="border border-gray-800 bg-gray-900/30 p-6 rounded-xl hover:border-pink-500 transition-colors duration-300">
+          <span class="text-2xl bg-pink-600 text-white rounded p-2 inline-block mb-4">🌱</span>
+          <h2 class="text-white text-xl font-bold mb-2">Sustainable</h2>
+          <p class="text-gray-400 text-sm">Ethically sourced materials with carbon-neutral production.</p>
+        </div>
+      </div>
+
+      <button class="bg-pink-600 hover:bg-pink-700 text-white font-bold py-4 px-8 rounded-lg w-full sm:w-auto transition-all duration-300 shadow-lg shadow-pink-600/30">
+        Discover Our Craft
+      </button>
+    </div>
+
+    <!-- Right Side: Grid of Images -->
+    <div class="grid grid-cols-2 grid-rows-2 gap-4 h-[500px] md:h-[700px]">
+      <div class="row-span-2 overflow-hidden rounded-2xl">
+        <img src="image/pexels-yugdas-manandhar-1078164-2155319N5.jpg" alt="fashion" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+      </div>
+      <div class="overflow-hidden rounded-2xl">
+        <img src="image/pexels-ferarcosn-19081N3.jpg" alt="shoes" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+      </div>
+      <div class="overflow-hidden rounded-2xl">
+        <img src="image/pexels-jatin-anand-33853-125779N4.jpg" alt="details" class="w-full h-full object-cover hover:scale-105 transition-transform duration-700">
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- REVIEWS SECTION -->
+<section class="py-20 bg-gray-900/20 border-t border-gray-900">
+  <div class="text-center px-4 mb-16">
+    <h2 class="text-4xl text-white font-bold mb-4">What Our Customers Say</h2>
+    <p class="text-lg text-gray-400 font-semibold tracking-wider">Real stories from fashion enthusiasts</p>
+  </div>
+
+  <div class="grid grid-cols-1 md:grid-cols-3 gap-6 px-6 md:px-10">
+    <!-- Review 1 -->
+    <div class="flex flex-col justify-between border border-gray-800 bg-black p-8 rounded-2xl hover:border-pink-500 transition-colors duration-300">
+      <div>
+        <p class="text-xl text-pink-600 text-right mb-4">★★★★★</p>
+        <p class="text-gray-400 italic mb-8">"NOIR has completely transformed my wardrobe. The quality and attention to detail is unmatched. Every piece feels like a work of art."</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-pink-600 flex items-center justify-center text-white font-bold text-xl">S</div>
+        <div>
+          <p class="text-white font-bold">Sara Chen</p>
+          <p class="text-xs text-gray-500">Fashion Blogger</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review 2 -->
+    <div class="flex flex-col justify-between border border-gray-800 bg-black p-8 rounded-2xl hover:border-pink-500 transition-colors duration-300">
+      <div>
+        <p class="text-xl text-pink-600 text-right mb-4">★★★★★</p>
+        <p class="text-gray-400 italic mb-8">"The sustainable approach combined with luxury design is exactly what I was looking for. NOIR proves you don't have to compromise."</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-pink-600 flex items-center justify-center text-white font-bold text-xl">M</div>
+        <div>
+          <p class="text-white font-bold">Marcus Rodriguez</p>
+          <p class="text-xs text-gray-500">Creative Director</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Review 3 -->
+    <div class="flex flex-col justify-between border border-gray-800 bg-black p-8 rounded-2xl hover:border-pink-500 transition-colors duration-300">
+      <div>
+        <p class="text-xl text-pink-600 text-right mb-4">★★★★★</p>
+        <p class="text-gray-400 italic mb-8">"I've been a customer for three years now, and each collection keeps exceeding my expectations. The fit and quality are consistently outstanding."</p>
+      </div>
+      <div class="flex items-center gap-4">
+        <div class="w-12 h-12 rounded-full bg-pink-600 flex items-center justify-center text-white font-bold text-xl">A</div>
+        <div>
+          <p class="text-white font-bold">Alexandra Kim</p>
+          <p class="text-xs text-gray-500">Entrepreneur</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="border-t border-gray-900 py-10 text-center">
+  <p class="text-gray-600 text-sm">© 2024 NOIR Fashion. All rights reserved.</p>
+</footer>
+
+<script>
+  // Simple Hero Image Slider
+  const slides = document.querySelectorAll(".slide");
+  let current = 0;
+
+  function showSlide(i) {
+    slides.forEach((slide, index) => {
+      if (index === i) {
+        slide.classList.replace("opacity-0", "opacity-100");
+      } else {
+        slide.classList.replace("opacity-100", "opacity-0");
+      }
+    });
+  }
+
+  setInterval(() => {
+    current = (current + 1) % slides.length;
+    showSlide(current);
+  }, 4000);
+</script>
+
+</body>
+</html>
